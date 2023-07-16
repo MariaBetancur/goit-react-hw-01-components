@@ -1,9 +1,33 @@
+/* Estilos para el contenedor principal */
 .profile {
-  width: 100%;
-  height: auto;
-  background-color: rgb(220, 228, 228);
+  width: 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Centrar el contenedor horizontalmente */
+  margin: 0 auto;
 }
+.profile-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para la imagen de perfil */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la descripción */
 .description {
+  margin-bottom: 20px;
   background-color: #ffff;
   width: 320px;
   height: 300px;
@@ -13,71 +37,60 @@
   justify-content: center;
   text-align: center;
 }
-.avatar {
-  position: absolute;
-  border: 2px solid rgb(238, 239, 241);
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
-.username {
+
+/* Estilos para el nombre de usuario */
+.description p:first-child {
   font-size: 20px;
-  font-weight: 400;
-  margin-top: 110px;
-}
-.tag {
-  font-size: 15px;
-  color: grey;
-}
-.location {
-  font-size: 15px;
-  color: grey;
-  font-weight: 500;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.stats-list {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-.statistics span {
-  display: table;
-  width: 81px;
-  height: 30px;
-  margin-left: -27%;
-}
-.item {
-  width: 80px;
-}
-.label {
-  color: #ffff;
-}
-.stats {
-  background-color: rgb(206, 206, 206);
-  display: flex;
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-.stats li {
-  border: 1px solid rgb(88, 88, 88);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.label {
+/* Estilos para el tag */
+.description p:nth-child(2) {
   font-size: 16px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la ubicación */
+.description p:last-child {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la lista de estadísticas */
+.stats {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Alineación centrada del contenido */
+  display: flex; /* Mostrar los elementos en línea */
+}
+
+/* Estilos para cada elemento de estadística */
+.stats li {
+  flex: 1; /* Ocupar el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la etiqueta de estadística */
+.label {
+  font-size: 14px;
   font-weight: 500;
   color: gray;
+  margin-bottom: 5px; /* Espaciado inferior para separar líneas */
 }
 
+/* Estilos para la cantidad de estadística */
 .quantity {
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: bold;
   font-weight: 500;
   color: rgb(44, 44, 44);
+  display: list-item;
 }
