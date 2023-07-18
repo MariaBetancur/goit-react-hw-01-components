@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import React from 'react';
 import './Statistics.css';
 
 export default function Statistics({ title, stats }) {
