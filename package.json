@@ -5,12 +5,11 @@
   "homepage": "https://MariaBetancur.github.io/goit-react-hw-01-components/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
-    "@testing-library/react": "^12.2.0",
     "@testing-library/user-event": "^13.5.0",
     "node": "^16.13.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^5.0.1",
     "styled-components": "^6.0.4",
     "web-vitals": "^2.1.3"
   },
@@ -38,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.0.0"
   }
 }
