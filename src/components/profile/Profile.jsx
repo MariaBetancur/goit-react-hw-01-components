@@ -66,4 +66,4 @@ const profileProps = {
 };
 
 ReactDOM.render(<Profile {...profileProps} />, document.getElementById('root'));
-// prueba
+// prueb
